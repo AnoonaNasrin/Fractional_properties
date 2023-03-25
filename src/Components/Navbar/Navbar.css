@@ -1,0 +1,64 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between !important;
+  width: 100vw;
+}
+
+.content {
+  position: fixed;
+  z-index: 2;
+  top:0;
+  background-color: white;
+}
+.content-one {
+  margin-left: 3rem;
+}
+
+.content-one img{
+  height:7vh;
+  border-radius:0.1rem;
+}
+.content-two {
+  margin-right: 4rem !important;
+}
+
+.order {
+  color: black !important;
+  font-weight: 300 !important;
+  font-size: 1.1rem !important ;
+  transition:all 0.1 linear;
+}
+
+.order:hover{
+    background: black;
+    color: white !important;
+    border-radius: 0.375rem;
+    opacity:0.9;
+    height: 2.7rem;
+}
+
+.order2 {
+  border: 1px solid black !important;
+  color: black !important;
+  font-weight: 400 !important;
+  
+}
+.order-main{
+    margin:0.15rem;
+}
+
+
+.enquire-btn{
+    background-color:white !important;
+    border-radius:none !important;
+    border: black !important;
+    height: 2.7rem !important;
+    color: black !important;
+    font-weight: 300 !important;
+}
+
+.enquire-btn:hover{
+    background: black !important;
+    color: white !important;
+}
+

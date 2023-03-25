@@ -1,0 +1,17 @@
+.main{
+    display: flex !important;
+}
+.content-icon{
+    flex-shrink: 0 !important;
+}
+.content-icon img {
+    width: 56px;
+    height: 56px;
+}
+.ms-3 {
+    margin-left: 1rem !important;
+}
+.flex-grow-1 {
+    flex-grow: 1 !important;
+}
+

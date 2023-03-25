@@ -1,0 +1,11 @@
+.card-body img{
+    height:500px;
+}
+
+.card-div{
+    height:20vh;
+    width:50vw;
+}
+.card-title{
+    font-weight: 400 !important;
+}
