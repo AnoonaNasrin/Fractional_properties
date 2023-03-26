@@ -1,42 +1,46 @@
-.left-tab{
-    width:20vw !important;
-}
-
 .left-1 {
   object-fit: cover !important;
 }
 
- .nav-link.active{
-  background-color:black  !important;
+.nav-link.active {
+  background-color: black !important;
   color: white !important;
 }
-.card{
-border: none !important;
+.card {
+  border: none !important;
 }
 #left-tabs-example-tab-second {
- color: black;
+  color: black;
 }
 
-#left-tabs-example-tab-first{
-color: black;
+#left-tabs-example-tab-first {
+  color: black;
 }
 
-
-#left-tabs-example-tab-third{
-color: black;
+#left-tabs-example-tab-third {
+  color: black;
 }
 
-#left-tabs-example-tab-four{
-color: black;
+#left-tabs-example-tab-four {
+  color: black;
 }
 
-#left-tabs-example-tab-five{
-color: black;
+#left-tabs-example-tab-five {
+  color: black;
 }
-.card-body{
-  padding:0 !important;
+.card-body {
+  padding: 0 !important;
 }
 .card-img-top {
-    border-top-left-radius:0 !important;
-    border-top-right-radius:0 !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+@media (max-width: 576px) {
+  #tabs-left {
+    flex-direction: row !important;
+    padding-bottom: 1rem;
+    overflow-x: scroll !important;
+    width: 100%;
+  }
 }

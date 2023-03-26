@@ -1,8 +1,49 @@
 import React from "react";
+import {Link} from "react-router-dom"
 import img from "../../../assets/images/image-1.jpg";
-import MyNavbar from "../../Navbar/Navbar";
+import CardContainer from "../../CardContainer/CardContainer";
+import NestedSelect from "../../Input/Input";
 
-import "./Listing.css"
+import MyNavbar from "../../Navbar/Navbar";
+import Slider from "../../Slider/Slider";
+
+import "./Listing.css";
+
+const upCome = [
+  {
+    image:
+      "https://i.phuketbuyhouse.com/upload/phuketbuy/Houseimage/default/7/7/0/77086.jpg",
+    heading: "Up1",
+    description:
+      "Lorem ipsum Lorem ipsum the place is located in goa one of the favorite we provide Lorem ipsum the place is located in goa one of the favorite we provide Lorem ipsum the place is located in goa one of the favorite we provide 1q",
+    Bedrooms: "4",
+    place: "Goa",
+    Baths: "2",
+    price: "200000",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ--vWbC4AeJNuDSq9GiMEzCubstDZM2xFcjlF7ldBh1_7OSq9oKyQkFEL1jOh5rPlSz3A&usqp=CAU",
+    heading: "Up2",
+    description:
+      "Lorem ipsum Lorem ipsum the place is located in goa one of the favorite we provide Lorem ipsum the place is located in goa one of the favorite we provide ",
+    Bedrooms: "4",
+    place: "Goa",
+    Baths: "2",
+    price: "200000",
+  },
+  {
+    image:
+      "https://cdn.wowowhome.com/photos/2018/03/Midcentury-Modern-by-Urban-Development-002.jpg",
+    heading: "Up3",
+    description:
+      "Lorem ipsum the place is located in goa one of the favorite we provide Lorem ipsum the place is located in goa one of the favorite we provide Lorem ipsum the place is located in goa one of the favorite we provide   ",
+    Bedrooms: "4",
+    place: "Goa",
+    Baths: "2",
+    price: "200000",
+  },
+];
 
 export default function List() {
   return (
@@ -18,27 +59,38 @@ export default function List() {
         </section>
 
         <section>
-          <div className="listing-1">
-            <select name="select city" value="select city">
-              <option>Goa</option>
-              <option>Kerala</option>
-              <option>Mumbai</option>
-            </select>
-
-            <select name="price"></select>
-
-            <select name="All type">
-              <option>All type</option>
-              <option>Featured</option>
-              <option>New Releases</option>
-              <option>Upcoming</option>
-            </select>
-          </div>
+          <div className="listing-1"></div>
           <div>
-            <select name="All type">
-              <option>All type</option>
-              <option>Featured</option>
-            </select>
+            <CardContainer
+              image={img}
+              headline="HI"
+              place="thy"
+              price="400"
+              amenities
+            />
+          </div>
+        </section>
+        <section className="contact-section">
+          <div className="contact-main">
+            <div className="head-contact">
+              <h1>Need more help to find your house?</h1>
+              <h5>
+                We can help you get your second home at the location of your
+                choice{" "}
+              </h5>
+              <Link to="/">
+                <button className="head-conta-btn btn">Contact Us</button>
+              </Link>
+            </div>
+            <div className="cont-img">
+              <img src="https://corporategrowth.org/wp-content/uploads/2020/09/meet-customer-needs-article.jpg" />
+            </div>
+          </div>
+        </section>
+        <section className="tab-sec-list">
+          <div className="sec-tab-head">
+          <h1>Upcoming Properties</h1>
+          <Slider data={upCome}/>
           </div>
         </section>
       </main>

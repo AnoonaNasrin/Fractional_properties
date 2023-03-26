@@ -1,18 +1,16 @@
-.box-1{
-    display: flex !important;
+.box-1 {
+  display: flex !important;
 }
-.content-icon{
-    flex-shrink: 0 !important;
+.content-icon {
+  flex-shrink: 0 !important;
 }
 .box-2 img {
-    width: 56px;
-    height: 56px;
+  width: 56px;
+  height: 56px;
 }
 .ms-3 {
-    margin-left: 1rem !important;
-    
+  margin-left: 1rem !important;
 }
 .flex-grow-1 {
-    flex-grow: 1 !important;
+  flex-grow: 1 !important;
 }
-

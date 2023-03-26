@@ -3,13 +3,13 @@ import Nav from "react-bootstrap/Nav";
 import Row from "react-bootstrap/Row";
 import Tab from "react-bootstrap/Tab";
 import CardComponent from "../card/Card";
-import "./LeftTabs.css"
+import "./LeftTabs.css";
 
 import logo from "../../assets/images/imag2.jpg";
 import img1 from "../../assets/images/img3.jpg";
 import img2 from "../../assets/images/img-4.jpg";
 import img from "../../assets/images/image-1.jpg";
-import img3 from "../../assets/images/img-n.png"
+import img3 from "../../assets/images/img-n.png";
 
 export default function LeftTabs() {
   return (
@@ -17,7 +17,7 @@ export default function LeftTabs() {
       <Row>
         <Col sm={3}>
           <div className="left-tab">
-            <Nav variant="pills" className="flex-column">
+            <Nav variant="pills" id="tabs-left" className="flex-column">
               <Nav.Item>
                 <Nav.Link eventKey="first">Trust</Nav.Link>
               </Nav.Item>

@@ -10,6 +10,7 @@ import frame from "../../assets/img/frame.svg";
 import mange from "../../assets/img/Mange.svg";
 import newnbr from "../../assets/img/new-n.svg";
 import last from "../../assets/images/image-1.jpg";
+import { Container, Row, Col } from "react-bootstrap";
 
 import "./Home.css";
 import TabPro from "../../Components/Tabs/Tabs";
@@ -113,48 +114,41 @@ export default function Home() {
           </div>
         </section>
         <section className="we-make">
-          <h1>We make it really easy to manage your new home</h1>
-          <div className="potion-main">
-            <div className="potion-2 text">
-              <Box
-                image={keep}
-                title="Stay in touch"
-                lines="The FRACTIONAL PROPERTY mobile application 
-                  allows you to get in touch with our 
-                  concierge or property managers who 
-                  will help you plan your stay better 
-                  and for you to stay updated."
-              />
-              <Box
-                image={frame}
-                title="Pick when you’d like to stay"
-                lines="Reserve travel and stay days for up to 
-                  two years in advance.Holidays and 
-                  common vacation periods are offered
-                  to each owner on a rotating basis."
-              />
-            </div>
-            <div className="potion-3 text">
-              <Box
-                image={newnbr}
-                title="Experience your new neighbourhood"
-                lines="We curate and recommend 
-                  experiences in and around your home. 
-                  Whether you’re traveling with family, 
-                  friends, or by yourself, we have
-                   something for you."
-              />
-              <Box
-                image={mange}
-                title="Manage your home remotely"
-                lines="If and when there’s a need for your
-                  home to undergo repairs and
-                  maintenance, we send you 
-                  notifications and updates on the 
-                  mobile app."
-              />
-            </div>
-          </div>
+          <Container>
+            <h1 className="text-center mb-5">
+              We make it really easy to manage your new home
+            </h1>
+            <Row>
+              <Col sm={6} md={3} className="mb-4">
+                <Box
+                  image={keep}
+                  title="Stay in touch"
+                  lines="The FRACTIONAL PROPERTY mobile application allows you to get in touch with our concierge or property managers who will help you plan your stay better and for you to stay updated."
+                />
+              </Col>
+              <Col sm={6} md={3} className="mb-4">
+                <Box
+                  image={frame}
+                  title="Pick when you’d like to stay"
+                  lines="Reserve travel and stay days for up to two years in advance.Holidays and common vacation periods are offered to each owner on a rotating basis."
+                />
+              </Col>
+              <Col sm={6} md={3} className="mb-4">
+                <Box
+                  image={newnbr}
+                  title="Experience your new neighbourhood"
+                  lines="We curate and recommend experiences in and around your home. Whether you’re traveling with family, friends, or by yourself, we have something for you."
+                />
+              </Col>
+              <Col sm={6} md={3} className="mb-4">
+                <Box
+                  image={mange}
+                  title="Manage your home remotely"
+                  lines="If and when there’s a need for your home to undergo repairs and maintenance, we send you notifications and updates on the mobile app."
+                />
+              </Col>
+            </Row>
+          </Container>
         </section>
         {/* <section className="section-bg">
           <h1>Not a time-share, but so much more</h1>

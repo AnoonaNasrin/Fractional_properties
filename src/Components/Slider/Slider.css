@@ -59,7 +59,7 @@
   position: relative;
   padding: 1rem 0rem;
   margin-bottom: 1rem;
-  gap:2rem;
+  gap: 2rem;
 }
 
 .slider-items::after {

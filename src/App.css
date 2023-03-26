@@ -36,7 +36,8 @@
     transform: rotate(360deg);
   }
 }
-body{
-  overflow-x: hidden;
-    font-family: "FreightDisp Pro" !important;
+body {
+  width: 100vw !important;
+  overflow-x: hidden !important;
+  font-family: "FreightDisp Pro" !important;
 }

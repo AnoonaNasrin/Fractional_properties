@@ -29,7 +29,7 @@
 }
 
 .home_secnd {
-  padding: 80px 0;
+  padding: 80px 1rem;
   position: relative;
 }
 .conatainer {
@@ -82,6 +82,11 @@ h2 {
   padding: 80px 0;
   position: relative;
 }
+
+.works {
+  padding-bottom: 2rem;
+}
+
 .text {
   text-align: start;
 }
@@ -111,31 +116,18 @@ h2 {
 
 .potion-main {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 2.5rem;
   gap: 2rem;
 }
-.potion-2 {
-  height: auto;
-  width: 30vw;
-  margin-left: 10rem;
-}
-.potion-3 {
-  height: auto;
-  width: 30vw;
-  margin-right: 10rem;
-}
+
 .we-make h1 {
   text-align: center;
 }
 
-.potion-4 {
-  width: 30vw;
-  margin: 1rem;
-}
 .we-make {
   background: #cfbbab !important;
-  padding: 120px 0px !important;
+  padding: 120px 1rem !important;
 }
 
 .section-bg {
@@ -158,5 +150,5 @@ h2 {
   width: 100vw !important;
 }
 .sec-qs {
-  text-align: center;
+  text-align:center !important;
 }

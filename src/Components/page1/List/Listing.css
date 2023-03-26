@@ -1,3 +1,45 @@
 .sec-list{
     padding: 80px 0;
 }
+
+.contact-section{
+background-color:#212529 !important;
+ height: 50vh;
+ width: 100vw;
+}
+.contact-main{
+    display: flex;
+    
+}
+.head-contact{
+width: 50vw;
+height:50vh;
+margin: 3rem;
+color: aliceblue;
+}
+.head-conta-btn {
+    margin: 1rem;
+    height: 3rem;
+    width: 7rem;
+    color: black !important;
+    background: white !important;
+}
+.btn{
+    border-radius: none !important;
+}
+.cont-img img{
+    width: 50vw;
+    height:50vh;
+    object-fit: cover;
+}
+.tab-sec-list{
+    height: 100vh;
+    width:100vw;
+    padding:6rem 3rem;
+    display: flex;
+    gap: 1rem;
+}
+.sec-tab-head{
+    text-align: center;
+    padding:2rem;
+}
