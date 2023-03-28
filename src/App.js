@@ -6,6 +6,7 @@ import Fraction from "./pages/Fraction/Fractional";
 import Why from "./pages/Why-Frac/Why-us";
 import MyNavbar from "./Components/Navbar/Navbar";
 import Stoper from "./pages/Stepper"
+import Footer from "./Components/footer/Footer"
 
 function App() {
   return (

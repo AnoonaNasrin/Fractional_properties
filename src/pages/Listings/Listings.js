@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 import img from "../../assets/images/image-1.jpg";
 import owner from "../../assets/img/Co-own.svg";
 import flexSvg from "../../assets/img/The-flex.svg";
-import Slider from "../../Components/Slider/Slider";
-import PropertyFilter from "../../Components/PrpertyCard/PropertyMain";
-import "./Listing.css";
 
+import MyNavbar from "../../Components/Navbar/Navbar";
+import Slider from "../../Components/Slider/Slider";
+
+import "./Listing.css";
+import PropertyFilter from "../../Components/PrpertyCard/PropertyMain";
 
 const upCome = [
   {
@@ -47,6 +49,9 @@ const upCome = [
 export default function List() {
   return (
     <>
+      <header>
+        <MyNavbar />
+      </header>
       <main>
         <section className="sec-list">
           <div className="list-img">
@@ -57,12 +62,12 @@ export default function List() {
         <section>
           <div className="listing-1"></div>
           <div>
-            <PropertyFilter/>
+            <PropertyFilter />
           </div>
         </section>
-        <section className="contact-section">
-          <div className="contact-main">
-            <div className="head-contact">
+        <section className="contact-section ">
+          <div className="contact-main row">
+            <div className="head-contact col-lg-6 col-md-12">
               <h1>Need more help to find your house?</h1>
               <h5>
                 We can help you get your second home at the location of your
@@ -72,7 +77,7 @@ export default function List() {
                 <button className="head-conta-btn btn">Contact Us</button>
               </Link>
             </div>
-            <div className="cont-img">
+            <div className="cont-img col-lg-6 col-md-12">
               <img src="https://corporategrowth.org/wp-content/uploads/2020/09/meet-customer-needs-article.jpg" />
             </div>
           </div>
@@ -83,14 +88,14 @@ export default function List() {
             <Slider data={upCome} />
           </div>
         </section>
-        <section className="section-ownExp">
-          <div className="sec-own-exp">
+        <section className="section-ownExp row">
+          <div className="col-lg-6 col-md-12 sec-own-exp mb-5">
             <h2>
               FRACTIONAL PROPERTY ,<br />
               to own the experience
             </h2>
           </div>
-          <div className="ownSec-main">
+          <div className="col-lg-6 col-md-12 ownSec-main">
             <div className="sec-ownership">
               <dv className="sec-mini-exp">
                 <img src={owner} />
@@ -109,7 +114,8 @@ export default function List() {
               <div className="sec-mini-3">
                 <h5>
                   The flexibility to sell your share directly to other buyers,
-                  or on the FRACTIONAL PROPERTY marketplace, whenever you wish to.
+                  or on the FRACTIONAL PROPERTY marketplace, whenever you wish
+                  to.
                 </h5>
               </div>
             </div>
