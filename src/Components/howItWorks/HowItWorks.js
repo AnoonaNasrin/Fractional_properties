@@ -8,7 +8,8 @@ const HowItWorks = () => {
             <h2 className='aboutus-heading'>HOW WE WORK ?</h2>
             <div className='carouselwrapper'>
 
-                <div id="myCarousel" className="carousel slide" data-ride="carousel">
+                <div id="myCarousel" className
+                ="carousel slide" data-ride="carousel">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
                             <div className='contentItem'>
