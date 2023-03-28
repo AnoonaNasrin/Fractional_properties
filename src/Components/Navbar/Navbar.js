@@ -1,4 +1,4 @@
-import React   from "react";
+import React from "react";
 import { Navbar, Nav, NavDropdown, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/MyP.png";
@@ -45,9 +45,11 @@ export default function MyNavbar() {
                 </NavDropdown>
               </div>
             </Nav>
-            <Button className="enquire-btn" href="">
-              Enquire Now
-            </Button>
+            <Link to='/enquire-now'>
+              <Button className="enquire-btn">
+                Enquire Now
+              </Button>
+            </Link>
           </Navbar.Collapse>
         </div>
       </Navbar>
