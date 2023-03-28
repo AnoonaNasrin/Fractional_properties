@@ -1,5 +1,5 @@
 import React from 'react'
-import './aboutus.css'
+import './AboutUs.css'
 import Carousel from './carousel/Carousel'
 
 function AboutUs() {
