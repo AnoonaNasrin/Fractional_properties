@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Listings from "./pages/Listings/Listings";
 import Fraction from "./pages/Fraction/Fractional";
@@ -12,7 +12,7 @@ import AboutUs from "./Components/aboutus/AboutUs";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <MyNavbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -23,7 +23,8 @@ function App() {
         <Route path='/aboutus' element={<AboutUs />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+
+    </>
   );
 }
 

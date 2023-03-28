@@ -1,11 +1,10 @@
 import React from 'react'
-import './AboutUs.css'
+import './aboutus.css'
 
-
-const AboutUs = () => {
+function AboutUs() {
   return (
-    <div className='fluid-container'>
-        
+    <div>
+        <h1 style={{marginTop:'20rem'}}>JAKSHJK</h1>
     </div>
   )
 }
