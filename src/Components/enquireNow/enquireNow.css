@@ -1,0 +1,49 @@
+.image-container {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+}
+
+.image-container .image {
+    width: 100%;
+    height: 500px;
+}
+
+.form-wrapper {
+    margin-bottom: 0.5rem;
+}
+
+.leftForm-wrapper {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.leftForm-wrapper-item {
+    margin-top: 2rem;
+}
+
+.leftForm-wrapper div {
+    padding: 2rem 6rem 1rem;
+}
+
+.contact-details-wrapper {
+    font-size: 1.2rem;
+}
+
+.contactno {
+    margin-left: 3rem;
+}
+
+.email {
+    font-size: 1.2rem;
+}
+
+
+@media only screen and (min-width:200px) and (max-width:1000px) {
+    .form-wrapper {
+        margin-bottom: 0.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
