@@ -3,7 +3,7 @@
 }
 
 .contact-section{
-background-color:#212529 !important;
+background-color:#082017 !important;
  height: 50vh;
  width: 100vw;
 }
@@ -33,13 +33,45 @@ color: aliceblue;
     object-fit: cover;
 }
 .tab-sec-list{
-    height: 100vh;
     width:100vw;
     padding:6rem 3rem;
     display: flex;
-    gap: 1rem;
+    gap: 1rem !important;
+    background-color:white;
 }
 .sec-tab-head{
     text-align: center;
     padding:2rem;
+}
+
+.sec-tab-head h1{
+  margin-bottom:2rem;
+}
+
+.section-ownExp{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 5rem 4rem;
+ background:gainsboro;
+}
+
+
+.ownSec-main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem ;
+}
+
+.sec-ownership{   
+display: flex;
+width: 50vw;
+gap: 1rem;
+}
+.sec-owner-fc{
+    display: flex;
+}   
+
+.sec-mini-exp img{
+  height: 4rem;
 }

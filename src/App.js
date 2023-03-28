@@ -1,10 +1,9 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import Listings from "./Components/page1/List/Listings";
-import Fraction from "./Components/page1/Fraction/Fractional";
-import Why from "./Components/page1/Why-Frac/Why-us";
-import Footer from './Components/footer/Footer'
+import Listings from "./pages/Listings/Listings";
+import Fraction from "./pages/Fraction/Fractional";
+import Why from "./pages/Why-Frac/Why-us";
 
 function App() {
   return (

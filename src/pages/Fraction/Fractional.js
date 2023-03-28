@@ -1,12 +1,11 @@
 import React from "react";
-import TabPro from "../../Tabs/Tabs"
-import Potion from "../../potions/potion/potion";
-import Box from "../../potions/box/box";
-import logo from "../../../assets/images/Dream.png";
-import own from "../../../assets/images/Own.png";
-import Exp from "../../../assets/images/Experience.png";
-import img from "../../../assets/images/img-4.jpg"
-import MyNavbar from "../../Navbar/Navbar";
+import TabPro from "../../Components/Tabs/Tabs"
+import Potion from "../../Components/potions/potion/potion";
+import logo from "../../assets/images/Dream.png";
+import own from "../../assets/images/Own.png";
+import Exp from "../../assets/images/Experience.png";
+import img from "../../assets/images/img-4.jpg"
+import MyNavbar from "../../Components/Navbar/Navbar";
 
 import "./Fractional.css"
 
