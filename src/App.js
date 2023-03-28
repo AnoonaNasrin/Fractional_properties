@@ -14,6 +14,7 @@ function App() {
         <Route path="/fraction" element={<Fraction />} />
         <Route path="/why" element={<Why />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }
