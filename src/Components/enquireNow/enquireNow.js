@@ -1,14 +1,13 @@
 import React from 'react'
 import './enquireNow.css'
-import Image from './image.jpg'
+import Image from './image.avif'
 import MyNavbar from '../Navbar/Navbar'
-import EnquiryForm from './enquiry-form/EnquiryForm'
+import EnquiryForm from './enquiryForm/EnquiryForm'
 
 const EnquireNow = () => {
   return (
     <div>
       <MyNavbar />
-
       <div className='fluid-container image-container'>
         <img src={Image} alt='' className='image' />
       </div>
@@ -24,14 +23,15 @@ const EnquireNow = () => {
             <h6 className='contact-details-wrapper'>Fractional Properties
               <span className='contactno'>123456789</span></h6>
             <h4 className='leftForm-wrapper-item'>Mail</h4>
-            <h6 className='email'>test@fractional.properties.com</h6>
+            <span className='email'>test@fractional.properties.com</span>
             <div className='icon-wrapper'></div>
           </div>
         </div>
         {/* right form */}
-        <div className='rightForm-wraapper col'>
-          <div>
-          <EnquiryForm/>
+        <div className='rightForm-wrapper col'>
+          <h2 className='rightForm-wrapper-heading'>Tell us more about yourself so we can help you find your second home.</h2>
+          <div className='enquiryform'>
+            <EnquiryForm />
           </div>
         </div>
       </div>

@@ -45,7 +45,7 @@ export default function MyNavbar() {
                 </NavDropdown>
               </div>
             </Nav>
-            <Link to='/step'>
+            <Link to='/enquiry'>
               <Button className="enquire-btn">
                 Enquire Now
               </Button>
