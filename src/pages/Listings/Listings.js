@@ -9,6 +9,7 @@ import Slider from "../../Components/Slider/Slider";
 
 import "./Listing.css";
 import PropertyFilter from "../../Components/PrpertyCard/PropertyMain";
+import HowCanWeHelpForm from '../../Components/how-can-we-help-form/HowCanWeHelpForm'
 
 const upCome = [
   {
@@ -55,7 +56,7 @@ export default function List() {
       <main>
         <section className="sec-list">
           <div className="list-img">
-            <img src={img} />
+            <img src={img} alt='' />
           </div>
         </section>
 
@@ -78,7 +79,7 @@ export default function List() {
               </Link>
             </div>
             <div className="cont-img col-lg-6 col-md-12">
-              <img src="https://corporategrowth.org/wp-content/uploads/2020/09/meet-customer-needs-article.jpg" />
+              <img src="https://corporategrowth.org/wp-content/uploads/2020/09/meet-customer-needs-article.jpg" alt=''/>
             </div>
           </div>
         </section>
@@ -98,7 +99,7 @@ export default function List() {
           <div className="col-lg-6 col-md-12 ownSec-main">
             <div className="sec-ownership">
               <dv className="sec-mini-exp">
-                <img src={owner} />
+                <img src={owner} alt='' />
               </dv>
               <div className="sec-min-2">
                 <h5>
@@ -109,7 +110,7 @@ export default function List() {
             </div>
             <div className="sec-ownership">
               <div className="sec-mini-exp">
-                <img src={flexSvg} />
+                <img src={flexSvg} alt='' />
               </div>
               <div className="sec-mini-3">
                 <h5>
@@ -121,6 +122,8 @@ export default function List() {
             </div>
           </div>
         </section>
+        <HowCanWeHelpForm/>
+
       </main>
     </>
   );

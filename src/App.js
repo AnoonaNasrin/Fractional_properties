@@ -7,6 +7,8 @@ import Why from "./pages/Why-Frac/Why-us";
 import MyNavbar from "./Components/Navbar/Navbar";
 import EnquireNow from './Components/enquireNow/enquireNow'
 import Footer from "./Components/footer/Footer"
+import AboutUs from "./Components/aboutus/AboutUs";
+
 
 function App() {
   return (
@@ -17,9 +19,10 @@ function App() {
         <Route path="/list" element={<Listings />} />
         <Route path="/fraction" element={<Fraction />} />
         <Route path="/why" element={<Why />} />
-        <Route path="/enquiry" element={<EnquireNow/>}/>
+        <Route path="/enquiry" element={<EnquireNow />} />
+        <Route path='/aboutus' element={<AboutUs />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </BrowserRouter>
   );
 }

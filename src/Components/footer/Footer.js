@@ -1,5 +1,6 @@
 import React from 'react'
 import './footer.css'
+import { Link } from 'react-router-dom'
 import { Icon } from 'react-icons-kit'
 import { facebook2 } from 'react-icons-kit/icomoon/facebook2'
 import { instagram } from 'react-icons-kit/icomoon/instagram'
@@ -19,7 +20,7 @@ const Footer = () => {
               <div className='column2-heading'>
                 <h5>Fractional Properties</h5>
               </div>
-              <p>About us</p>
+              <Link to='/aboutus' className='linkItem'><p>About us</p></Link>
               <p>How it works</p>
               <p>Listings</p>
               <p>Contact Info</p>

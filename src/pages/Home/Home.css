@@ -152,3 +152,7 @@ h2 {
 .sec-qs {
   text-align:center !important;
 }
+
+.linkItem:link {
+  color: white;
+}

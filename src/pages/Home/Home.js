@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 import { Container, Row, Col } from "react-bootstrap";
 import video from "../../assets/videos/sample.mp4";
 import logo from "../../assets/images/Dream.png";
@@ -15,7 +16,7 @@ import Potion from "../../Components/potions/potion/potion";
 import Box from "../../Components/potions/box/box";
 import Faq from "../../Components/faq/Faq";
 import ContactForm from "../../Components/contact-form/ContactForm";
-
+import HowCanWeHelpForm from '../../Components/how-can-we-help-form/HowCanWeHelpForm'
 import "./Home.css";
 
 export default function Home() {
@@ -50,9 +51,9 @@ export default function Home() {
               <div className="col-12 col-md-6 works hai">
                 <p>HOW FRACTIONAL PROPERTY WORKS</p>
                 <h2> We make owning a second home easy</h2>
-                <a className="btn-dark" href="">
-                  Know More
-                </a>
+               <Link to='know-more'>
+               Know More
+               </Link>
               </div>
               <div className="col-md-6 house text">
                 <Potion
@@ -153,7 +154,7 @@ export default function Home() {
         </section> */}
 
         <section className="section-img">
-          <img src={last} />
+          <img src={last} alt=''/>
         </section>
         <section className="ques">
           <h1 className="sec-qs">Questions ?</h1>
@@ -162,6 +163,7 @@ export default function Home() {
         <section className="contact-form">
           <ContactForm />
         </section>
+        <HowCanWeHelpForm/>
       </main>
     </>
   );
