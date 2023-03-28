@@ -5,7 +5,7 @@ import logo from "../../assets/images/Dream.png";
 import own from "../../assets/images/Own.png";
 import Exp from "../../assets/images/Experience.png";
 import img from "../../assets/images/img-4.jpg"
-import MyNavbar from "../../Components/Navbar/Navbar";
+
 
 import "./Fractional.css"
 
@@ -13,9 +13,6 @@ import "./Fractional.css"
 export default function Fraction(){
   return (
     <>
-      <header>
-        <MyNavbar />
-      </header>
       <main>
         <section className="sect-frac">
           <div className="frc-img">

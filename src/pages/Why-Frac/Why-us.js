@@ -1,5 +1,4 @@
 import React from "react";
-import MyNavbar from "../../Components/Navbar/Navbar";
 import img from "../../assets/images/imag2.jpg"
 
 import "./Why.css"
@@ -7,9 +6,6 @@ import "./Why.css"
 export default function Whyus(){
      return (
        <>
-         <header>
-           <MyNavbar />
-         </header>
          <main>
            <section className="sec-why">
              <div className="head-sec">

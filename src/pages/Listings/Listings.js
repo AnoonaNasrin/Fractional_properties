@@ -3,12 +3,10 @@ import { Link } from "react-router-dom";
 import img from "../../assets/images/image-1.jpg";
 import owner from "../../assets/img/Co-own.svg";
 import flexSvg from "../../assets/img/The-flex.svg";
-
-import MyNavbar from "../../Components/Navbar/Navbar";
 import Slider from "../../Components/Slider/Slider";
-
-import "./Listing.css";
 import PropertyFilter from "../../Components/PrpertyCard/PropertyMain";
+import "./Listing.css";
+
 
 const upCome = [
   {
@@ -49,9 +47,6 @@ const upCome = [
 export default function List() {
   return (
     <>
-      <header>
-        <MyNavbar />
-      </header>
       <main>
         <section className="sec-list">
           <div className="list-img">
