@@ -1,6 +1,6 @@
 import React from "react";
-import MyNavbar from "../../Navbar/Navbar";
-import img from "../../../assets/images/imag2.jpg"
+import MyNavbar from "../../Components/Navbar/Navbar";
+import img from "../../assets/images/imag2.jpg"
 
 import "./Why.css"
 

@@ -1,0 +1,23 @@
+.filter {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100vw;
+  padding: 2rem;
+}
+
+.filter-text {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 576px) {
+  .filter {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .filter-text {
+    /* flex-direction: column; */
+    gap: 0.5rem;
+  }
+}

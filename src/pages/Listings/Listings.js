@@ -1,13 +1,14 @@
 import React from "react";
-import {Link} from "react-router-dom"
-import img from "../../../assets/images/image-1.jpg";
-import CardContainer from "../../CardContainer/CardContainer";
-import NestedSelect from "../../Input/Input";
+import { Link } from "react-router-dom";
+import img from "../../assets/images/image-1.jpg";
+import owner from "../../assets/img/Co-own.svg";
+import flexSvg from "../../assets/img/The-flex.svg";
 
-import MyNavbar from "../../Navbar/Navbar";
-import Slider from "../../Slider/Slider";
+import MyNavbar from "../../Components/Navbar/Navbar";
+import Slider from "../../Components/Slider/Slider";
 
 import "./Listing.css";
+import PropertyFilter from "../../Components/PrpertyCard/PropertyMain";
 
 const upCome = [
   {
@@ -61,13 +62,7 @@ export default function List() {
         <section>
           <div className="listing-1"></div>
           <div>
-            <CardContainer
-              image={img}
-              headline="HI"
-              place="thy"
-              price="400"
-              amenities
-            />
+            <PropertyFilter/>
           </div>
         </section>
         <section className="contact-section">
@@ -89,8 +84,40 @@ export default function List() {
         </section>
         <section className="tab-sec-list">
           <div className="sec-tab-head">
-          <h1>Upcoming Properties</h1>
-          <Slider data={upCome}/>
+            <h1>Upcoming Properties</h1>
+            <Slider data={upCome} />
+          </div>
+        </section>
+        <section className="section-ownExp">
+          <div className="sec-own-exp">
+            <h2>
+              FRACTIONAL PROPERTY ,<br />
+              to own the experience
+            </h2>
+          </div>
+          <div className="ownSec-main">
+            <div className="sec-ownership">
+              <dv className="sec-mini-exp">
+                <img src={owner} />
+              </dv>
+              <div className="sec-min-2">
+                <h5>
+                  Co-ownership allows you to own multiple homes in different
+                  destinations, at the cost of a single home.
+                </h5>
+              </div>
+            </div>
+            <div className="sec-ownership">
+              <div className="sec-mini-exp">
+                <img src={flexSvg} />
+              </div>
+              <div className="sec-mini-3">
+                <h5>
+                  The flexibility to sell your share directly to other buyers,
+                  or on the FRACTIONAL PROPERTY marketplace, whenever you wish to.
+                </h5>
+              </div>
+            </div>
           </div>
         </section>
       </main>
