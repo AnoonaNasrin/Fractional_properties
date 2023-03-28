@@ -1,0 +1,21 @@
+.carousel-item {
+    height: 30rem;
+}
+
+.carousel-item img {
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width:200px) and (max-width:1000px) {
+    .abouts-details-container {
+        display: flex;
+        flex-direction: column;
+    }
+}

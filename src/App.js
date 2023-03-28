@@ -8,7 +8,7 @@ import MyNavbar from "./Components/Navbar/Navbar";
 import EnquireNow from './Components/enquireNow/enquireNow'
 import Footer from "./Components/footer/Footer"
 import AboutUs from "./Components/aboutus/AboutUs";
-
+import HowItWorks from "./Components/howItWorks/HowItWorks";
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
         <Route path="/why" element={<Why />} />
         <Route path="/enquiry" element={<EnquireNow />} />
         <Route path='/aboutus' element={<AboutUs />} />
+        <Route path='/howitworks' element={<HowItWorks />} />
       </Routes>
       <Footer />
 

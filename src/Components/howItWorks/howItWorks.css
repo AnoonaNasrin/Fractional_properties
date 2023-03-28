@@ -1,0 +1,30 @@
+
+.howitworks-wrapper{
+    margin-top: 7rem;
+
+}
+
+.howitworks-wrapper h2{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.carouselwrapper{
+    background-color: lightblue;
+    margin-bottom: 2rem;
+}
+
+
+.contentItem p{
+    width:70%;
+    text-align: center;
+    margin: auto;
+    margin-top: 10rem;
+    font-size: 1.5rem;
+}
+
+.contentItem p:hover{
+    color: black;
+    font-weight: normal;
+}
+

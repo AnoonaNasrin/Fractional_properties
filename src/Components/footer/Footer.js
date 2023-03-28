@@ -21,7 +21,7 @@ const Footer = () => {
                 <h5>Fractional Properties</h5>
               </div>
               <Link to='/aboutus' className='linkItem'><p>About us</p></Link>
-              <p>How it works</p>
+              <Link to='/howitworks' className='linkItem'><p>How It Works</p></Link>
               <p>Listings</p>
               <p>Contact Info</p>
               <p>FAQs</p>
