@@ -66,6 +66,7 @@ export default function Fraction(){
           </div>
         </section>
         ;
+        <HowCanWeHelpForm/>
       </main>
     </>
   );
