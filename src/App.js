@@ -18,6 +18,7 @@ function App() {
         <Route path="/why" element={<Why />} />
         <Route path="/step" element={<Stoper/>}/>
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }

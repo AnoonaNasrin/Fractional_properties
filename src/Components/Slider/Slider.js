@@ -1,6 +1,5 @@
 import React from "react";
 import { Carousel, Row, Col, Button } from "react-bootstrap";
-
 import "./Slider.css";
 
 export default function Slider(props) {
@@ -32,9 +31,9 @@ export default function Slider(props) {
                   <Button variant="dark" className="slider-btn">
                     View Details
                   </Button>
-                  <a className="slider-a" href="#">
+                  <Link to ='view-details'>
                     View more details
-                  </a>
+                  </Link>
                 </div>
               </Col>
               <Col md={6} className="slider-3">
