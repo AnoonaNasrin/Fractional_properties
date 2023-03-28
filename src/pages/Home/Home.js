@@ -1,6 +1,5 @@
 import React from "react";
-import MyNavbar from "../../Components/Navbar/Navbar";
-
+import { Container, Row, Col } from "react-bootstrap";
 import video from "../../assets/videos/sample.mp4";
 import logo from "../../assets/images/Dream.png";
 import own from "../../assets/images/Own.png";
@@ -10,24 +9,18 @@ import frame from "../../assets/img/frame.svg";
 import mange from "../../assets/img/Mange.svg";
 import newnbr from "../../assets/img/new-n.svg";
 import last from "../../assets/images/image-1.jpg";
-import { Container, Row, Col } from "react-bootstrap";
-
-import "./Home.css";
 import TabPro from "../../Components/Tabs/Tabs";
 import LeftTabs from "../../Components/LeftTabs/LeftTabs";
 import Potion from "../../Components/potions/potion/potion";
 import Box from "../../Components/potions/box/box";
-
 import Faq from "../../Components/faq/Faq";
-
 import ContactForm from "../../Components/contact-form/ContactForm";
+
+import "./Home.css";
 
 export default function Home() {
   return (
     <>
-      <header>
-        <MyNavbar />
-      </header>
       <main>
         <section className="main-head">
           <div className="container">
