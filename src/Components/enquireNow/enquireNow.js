@@ -1,13 +1,11 @@
 import React from 'react'
 import './enquireNow.css'
 import Image from './image.avif'
-import MyNavbar from '../Navbar/Navbar'
 import EnquiryForm from './enquiryForm/EnquiryForm'
 
 const EnquireNow = () => {
   return (
     <div>
-      <MyNavbar />
       <div className='fluid-container image-container'>
         <img src={Image} alt='' className='image' />
       </div>
