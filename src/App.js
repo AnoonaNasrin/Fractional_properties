@@ -4,6 +4,7 @@ import Home from "./pages/Home/Home";
 import Listings from "./Components/page1/List/Listings";
 import Fraction from "./Components/page1/Fraction/Fractional";
 import Why from "./Components/page1/Why-Frac/Why-us";
+import Footer from './Components/footer/Footer'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/fraction" element={<Fraction />} />
         <Route path="/why" element={<Why />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }
