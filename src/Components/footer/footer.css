@@ -69,8 +69,14 @@ p {
     transition: font-weight 1s;
 }
 
+.linkItem{
+    color: white;
+}
+
+
 p:hover {
     font-weight: bolder;
+    color: white;
 }
 
 

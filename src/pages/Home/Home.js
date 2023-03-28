@@ -15,7 +15,7 @@ import Potion from "../../Components/potions/potion/potion";
 import Box from "../../Components/potions/box/box";
 import Faq from "../../Components/faq/Faq";
 import ContactForm from "../../Components/contact-form/ContactForm";
-
+import HowCanWeHelpForm from '../../Components/how-can-we-help-form/HowCanWeHelpForm'
 import "./Home.css";
 
 export default function Home() {
@@ -153,7 +153,7 @@ export default function Home() {
         </section> */}
 
         <section className="section-img">
-          <img src={last} />
+          <img src={last} alt=''/>
         </section>
         <section className="ques">
           <h1 className="sec-qs">Questions ?</h1>
@@ -162,6 +162,7 @@ export default function Home() {
         <section className="contact-form">
           <ContactForm />
         </section>
+        <HowCanWeHelpForm/>
       </main>
     </>
   );

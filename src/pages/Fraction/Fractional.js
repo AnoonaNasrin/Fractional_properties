@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 import TabPro from "../../Components/Tabs/Tabs"
 import Potion from "../../Components/potions/potion/potion";
 import logo from "../../assets/images/Dream.png";
@@ -8,6 +9,7 @@ import img from "../../assets/images/img-4.jpg"
 
 
 import "./Fractional.css"
+import HowCanWeHelpForm from '../../Components/how-can-we-help-form/HowCanWeHelpForm'
 
 
 export default function Fraction(){
@@ -16,7 +18,7 @@ export default function Fraction(){
       <main>
         <section className="sect-frac">
           <div className="frc-img">
-            <img src={img} />
+            <img src={img} alt='' />
           </div>
         </section>
         <section className="home_secnd">
@@ -25,9 +27,9 @@ export default function Fraction(){
               <div className="col-12 col-md-6 works hai">
                 <p>HOW FRACTIONAL PROPERTY WORKS</p>
                 <h2> We make owning a second home easy</h2>
-                <a className="btn-dark" href="">
+                <Link to='knowMore'>
                   Know More
-                </a>
+                </Link>
               </div>
               <div className="col-md-6 house text">
                 <Potion
