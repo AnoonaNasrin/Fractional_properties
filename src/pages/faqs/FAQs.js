@@ -18,7 +18,6 @@ const FAQs = () => {
         <div className='faqs-page-wrapper'>
             <div className='left-container'>
                 <div className='questionWrapper'>
-                    <h4 onClick={handleAnwerWrapper}>question</h4>
                     <div className='answerWrapper'>answer</div>
                 </div>
             </div>
