@@ -23,7 +23,7 @@ const Footer = () => {
               <Link to='/aboutus' className='linkItem'><p>About us</p></Link>
               <Link to='/howitworks' className='linkItem'><p>How It Works</p></Link>
               <p>Listings</p>
-              <p>Contact Info</p>
+              <Link to='/contactInfo' className='linkItem'><p>Contact Info</p></Link>
               <p>FAQs</p>
             </div>
             <div className='col column3'>

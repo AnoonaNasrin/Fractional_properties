@@ -6,9 +6,9 @@ import "./Slider.css";
 export default function Slider(props) {
   return (
     <Carousel className="slider" slide={false}>
-      {props.data.map((element) => {
+      {props.data.map((element,index) => {
         return (
-          <Carousel.Item>
+          <Carousel.Item key={index+1}>
             <Row className="slider-child">
               <Col md={6} className="slider-2">
                 <h4>{element.place}</h4>
