@@ -63,6 +63,11 @@
     .rightForm-wrapper-heading{
         margin: auto;
         text-align: center;
+    }
+
+    .leftForm-wrapper {
+        display: flex;
+        flex-direction: column;
         border:1px solid black;
     }
 }

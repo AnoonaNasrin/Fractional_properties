@@ -1,6 +1,11 @@
 import React, { useState } from 'react'
 import './how-can-we-help-form.css'
 
+const contactCode = []
+for (let i = 1; i <= 95; i++) {
+    contactCode.push(i)
+}
+
 
 const HowCanWeHelpForm = () => {
 
@@ -10,9 +15,9 @@ const HowCanWeHelpForm = () => {
         email: '',
         contactCode: '',
         contact: '',
-        ownershipType: ''
+        ownershipType: '',
+        location:''
     })
-
     const [isChecked, setIsChecked] = useState(false)
     //const [ErrBorder, setErrBorder] = useState('black')
 
@@ -46,13 +51,13 @@ const HowCanWeHelpForm = () => {
                         <div className='radio-option'>
                             <div className='radio-option1'>
                                 <label htmlFor='fractional-ownership' >Fractional Ownership</label>
-                                <input type='radio' className='radioBtn' id='fractional-ownership' 
-                                name='ownershipType' value='fractional-ownership' onChange={handleInputs} />
+                                <input type='radio' className='radioBtn' id='fractional-ownership'
+                                    name='ownershipType' value='fractional-ownership' onChange={handleInputs} />
                             </div>
                             <div className='radio-option2'>
                                 <label htmlFor='full-ownership'>Full Ownership</label>
-                                <input type='radio' className='radioBtn' id='full-ownership' 
-                                name='ownershipType' value='full-ownership' onChange={handleInputs}  />
+                                <input type='radio' className='radioBtn' id='full-ownership'
+                                    name='ownershipType' value='full-ownership' onChange={handleInputs} />
                             </div>
                         </div>
                         <input type='text' className='firstname' placeholder='First Name *'
@@ -60,9 +65,9 @@ const HowCanWeHelpForm = () => {
                         </input>
                         <div className='contactNo'>
                             <select className='contact-code-selet' name='contactCode' value={formData.contactCode} onChange={handleInputs} required>
-                                <option value='1'>1</option>
-                                <option value='2'>2</option>
-                                <option value='91'>91</option>
+                                {contactCode.map((code)=>(
+                                    <option value={code} key={code}>+ {code}</option>
+                                ))}
                             </select>
                             <input type='text' className='enter-contactno' placeholder='Phone Number *'
                                 name='contact' value={formData.contact} onChange={handleInputs} required />
@@ -71,10 +76,10 @@ const HowCanWeHelpForm = () => {
 
                     <div className='column2'>
                         <h5>Choose Location *</h5>
-                        <select className='location-select'>
-                            <option>Alibaug</option>
-                            <option>Gaon</option>
-                            <option>Nilgiris</option>
+                        <select className='location-select' name='location' value={formData.location} onChange={handleInputs}>
+                            <option value='Alibaug'>Alibaug</option>
+                            <option value='Goa'>Goa</option>
+                            <option value='Nilgiris'>Nilgiris</option>
                         </select>
                         <input type='text' className='lastname' placeholder='Last Name *'
                             name='lastname' value={formData.lastname} onChange={handleInputs} required />
