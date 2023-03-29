@@ -16,11 +16,15 @@ const HowCanWeHelpForm = () => {
         contactCode: '',
         contact: '',
         ownershipType: '',
-        location:''
+        location: ''
     })
     const [isChecked, setIsChecked] = useState(false)
-    //const [ErrBorder, setErrBorder] = useState('black')
+    const [checkboxMsg, setCheckboxMsg] = useState(false)
+    const [successMsg, setSuccessMsg] = useState(false)
+    // const [errStatus,setErrStatus]=useState(false)
 
+    // const borderStyle={border:(errStatus===true)?'1px solid red':'1px solid black'
+    // }
     //handle Inputs
     const handleInputs = (e) => {
         setFormData(prevState => ({ ...prevState, [e.target.name]: e.target.value }))
@@ -31,10 +35,13 @@ const HowCanWeHelpForm = () => {
         e.preventDefault()
 
         if (isChecked) {
+            setSuccessMsg(true)
+            setCheckboxMsg(false)
             console.log(formData)
             console.log(formData.ownershipType)
         }
         else {
+            setCheckboxMsg(true)
             console.log('checkbox not selected')
         }
     }
@@ -65,7 +72,7 @@ const HowCanWeHelpForm = () => {
                         </input>
                         <div className='contactNo'>
                             <select className='contact-code-selet' name='contactCode' value={formData.contactCode} onChange={handleInputs} required>
-                                {contactCode.map((code)=>(
+                                {contactCode.map((code) => (
                                     <option value={code} key={code}>+ {code}</option>
                                 ))}
                             </select>
@@ -93,8 +100,12 @@ const HowCanWeHelpForm = () => {
                         checked={isChecked} onChange={(e) => setIsChecked(e.target.checked)}
                         required />
                     <label htmlFor='keep-me-updated' className='keep-meupdated-label' >Keep me updated with the latest news and listings</label>
+                    {checkboxMsg && <span style={{ color: 'red', marginLeft: '1rem' }}>Select checkbox</span>}
                 </div>
                 <button className='submit-btn' onClick={handleSubmit}> Submit</button>
+                <div style={{ marginLeft: '1rem', paddingTop: '0.2rem' }} className='fluid-container' >
+                    {successMsg && <span> Thanks!We'll get back to you soon.</span>}
+                </div>
             </form>
         </div>
     )

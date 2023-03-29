@@ -9,6 +9,8 @@ import EnquireNow from './Components/enquireNow/enquireNow'
 import Footer from "./Components/footer/Footer"
 import AboutUs from "./Components/aboutus/AboutUs";
 import HowItWorks from "./Components/howItWorks/HowItWorks";
+import FAQs from "./pages/faqs/FAQs";
+
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
         <Route path="/enquiry" element={<EnquireNow />} />
         <Route path='/aboutus' element={<AboutUs />} />
         <Route path='/howitworks' element={<HowItWorks />} />
+        <Route path='/faqs' element={<FAQs />} />
       </Routes>
       <Footer />
 

@@ -1,0 +1,20 @@
+.faqs-page-wrapper {
+    margin-top: 6rem;
+}
+
+.left-container {
+    width: 70%;
+    border: 1px solid black;
+}
+
+.questionWrapper {
+    padding-left: 5rem;
+}
+
+.questionWrapper h4 {
+    border: 1px solid black;
+}
+
+.questionWrapper .answerWrapper {
+    border: 1px solid black;
+}
