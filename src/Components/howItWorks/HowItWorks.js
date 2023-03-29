@@ -9,7 +9,7 @@ const HowItWorks = () => {
             <div className='carouselwrapper'>
 
                 <div id="myCarousel" className
-                ="carousel slide" data-ride="carousel">
+                    ="carousel slide" data-ride="carousel">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
                             <div className='contentItem'>

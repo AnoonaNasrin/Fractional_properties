@@ -1,6 +1,7 @@
 .main-head {
-  padding: 120px 0;
   text-align: center;
+  margin-top: 6rem;
+  padding-bottom: 0rem;
 }
 * {
   padding: 0;
@@ -13,7 +14,6 @@
   font-weight: 400;
   font-size: 56px;
   color: #082017;
-  margin-bottom: 16px;
 }
 
 .main-head p {
@@ -22,9 +22,15 @@
   max-width: 540px;
   margin: 0 auto;
   color: #082017;
+  padding-top: 2rem;
+}
+
+.main-head p:hover{
+  color:black;
+  font-weight: normal;
 }
 .video-wrap video {
-  height: 70vh !important;
+  height: 50vh !important;
   width: 100vw;
 }
 
@@ -155,4 +161,15 @@ h2 {
 
 .linkItem:link {
   color: white;
+}
+
+
+@media only screen and (min-width:200px) and (max-width:1000px) {
+  .main-head{
+    padding-bottom: 0rem;
+  }
+
+  .main-head .container p{
+    margin-top: 2rem;
+  }
 }
